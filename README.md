@@ -10,6 +10,7 @@
 развертывание приложения.
 
 ```sh
+$ git clone git@github.com:romaxa83/sf4-project-on-docker.git
 $ make init
 ```
 использование консольных команд symfony.
@@ -18,16 +19,16 @@ $ make init
 $ docker-compose run --rm app-php-cli php bin/console <command>
 ```
 pgadmin находиться по адресу http://localhost:555
+
+
 вход
-| Поля | Данные |
-| ------ | ------ |
-| login | pgadmin4@pgadmin.org |
-| password | admin |
+  - login: pgadmin4@pgadmin.org
+  - password: admin
+
+
 подключение к серверу
-| Поля | Данные |
-| ------ | ------ |
-| host name/address | app-postgres |
-| port | 5432 |
-| maintenance | app |
-| username | app |
-| password | secret |
+  - host name/address: app-postgres
+  - port: 5432
+  - maintenance: app
+  - username: app
+  - password: secret 
